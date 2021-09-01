@@ -10,15 +10,17 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-//   console.log(req.body)
+  //   console.log(req.body)
+  console.log(req.ips)
+  console.log(req.ip)
   res.send('Hello World!')
 })
 
 app.post('/post', (req, res) => {
-    console.log(JSON.stringify(req.body))
-    res.send('Hello World!')
-  })
-  
+  console.log(JSON.stringify(req.body))
+  res.send('Hello World!')
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
