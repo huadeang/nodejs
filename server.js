@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
   //   console.log(req.body)
   console.log(req.ips)
   console.log(req.ip)
+  console.log(req.socket.remoteAddress)
   console.log(req.headers)
   res.send('Hello World!')
 })
