@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   console.log(req.ip)
   console.log(req.socket.remoteAddress)
   console.log(req.headers)
-  res.send('Hello World!')
+  res.send(req.ip)
 })
 
 app.post('/post', (req, res) => {
